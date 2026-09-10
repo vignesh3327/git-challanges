@@ -9,7 +9,7 @@ def create_instance():
         print("Launching EC2 instance...")
         instances = ec2.create_instances(
             ImageId='ami-0c7217cdde317cfec',  # Replace with a valid AMI ID for your region (e.g., Ubuntu or Amazon Linux 2023)
-            InstanceType='t2.large',
+            InstanceType='t2.micro',
             MinCount=1,
             MaxCount=1,
             KeyName='your-key-pair-name',     # Replace with your EC2 Key Pair name
